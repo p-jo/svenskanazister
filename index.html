@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nazister i Sverige: Medlemmar och sympatisörer 1931-45</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Markercluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Heatmap plugin -->
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+  <!-- Fuse.js via jsDelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+  <!-- Våra egna filer -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/searchable-dropdown.css">-->
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Nazister i Sverige</h1>
+      <h2>Medlemmar och sympatisörer 1931-45</h2>
+      <p>Baserat på uppgifter framtagna av <a href="https://tobiashubinette.wordpress.com/texter/texter-om-nationalsocialism-och-fascism/">Tobias Hübinette</a></p>
+      <div class="filters">
+        <input id="q" type="search" placeholder="Sök person (namn/alias)…" aria-label="Sök person" />
+        <select id="org" aria-label="Filtrera på organisation"><option value="">Alla organisationer</option></select>
+        <select id="lan" aria-label="Filtrera på län"><option value="">Alla län</option></select>
+        <select id="bransch" aria-label="Filtrera på bransch"><option value="">Alla branscher</option></select>
+        <button class="btn" id="reset">Rensa</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="list">
+      <header><div id="stats">Laddar…</div></header>
+      <div id="items"></div>
+      <div class="pagination">
+        <button id="prev">Föregående</button>
+        <span id="pageinfo" aria-live="polite">1 / 1</span>
+        <button id="next">Nästa</button>
+      </div>
+    </section>
+    <section>
+      <div id="map" role="region" aria-label="Karta över personer"></div>
+    </section>
+  </main>
+
+  <!-- Modal för källor (per person) -->
+  <div id="sourcesBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sourcesTitle">
+    <div class="modal" id="sourcesModal">
+      <button class="modal-close" id="sourcesClose" aria-label="Stäng">Stäng</button>
+      <h2 id="sourcesTitle">Källor</h2>
+      <div id="sourcesList">Laddar källor…</div>
+    </div>
+  </div>
+
+  <footer>
+    <details>
+      <summary>Statistik</summary>
+      <div id="statistics">
+        <h4>Antal personer per län</h4>
+        <div class="chart-container">
+          <canvas id="kommunChart"></canvas> <!-- Behåll ID för nu -->
+        </div>
+        <h4>Antal personer per bransch</h4>
+        <div class="chart-container">
+          <canvas id="branschChart"></canvas>
+        </div>
+      </div>
+    </details>
+    
+    <details style="margin-top: 16px;">
+      <summary>Organisationer</summary>
+      <div id="allSources">Laddar…</div>
+    </details>
+
+    <section style="margin: 34px 12px">
+      <p class="meta">Svenska nazister visar data från medlemsregister 1931-45. Till datan har lagts geokodning, kommun, län och bransch. Vissa poster har slagits ihop för att visa på samma persons medlemskap i flera organisationer. Det kan förekomma fel i den tillagda datan, särskilt när det gäller adresser, där ortnamn ibland ändrats sedan 30- och 40-talet. Kontrollera alltid uppgifter mot ursprungsdokumenten.</p>
+    </section>
+
+  </footer> 
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Our modular JavaScript files (order matters!) -->
+  <script src="./js/config.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/dataLoader.js"></script>
+  <script src="./js/mapManager.js"></script>
+  <script src="./js/filterManager.js"></script>
+  <script src="./js/modalManager.js"></script>
+  <script src="./js/listRenderer.js"></script>
+  <script src="./js/statisticsManager.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

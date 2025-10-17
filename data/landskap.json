@@ -1,0 +1,420 @@
+{
+  "lan": [
+    {
+      "id": "stockholms-lan",
+      "namn": "Stockholms län",
+      "kommuner": [
+        {"id": "upplands-vasby-kommun", "namn": "Upplands Väsby kommun"},
+        {"id": "vallentuna-kommun", "namn": "Vallentuna kommun"},
+        {"id": "osterakers-kommun", "namn": "Österåkers kommun"},
+        {"id": "varmdo-kommun", "namn": "Värmdö kommun"},
+        {"id": "jarfalla-kommun", "namn": "Järfälla kommun"},
+        {"id": "ekero-kommun", "namn": "Ekerö kommun"},
+        {"id": "huddinge-kommun", "namn": "Huddinge kommun"},
+        {"id": "botkyrka-kommun", "namn": "Botkyrka kommun"},
+        {"id": "salem-kommun", "namn": "Salem kommun"},
+        {"id": "haninge-kommun", "namn": "Haninge kommun"},
+        {"id": "tyreso-kommun", "namn": "Tyresö kommun"},
+        {"id": "upplands-bro-kommun", "namn": "Upplands-Bro kommun"},
+        {"id": "nykvarns-kommun", "namn": "Nykvarns kommun"},
+        {"id": "taby-kommun", "namn": "Täby kommun"},
+        {"id": "danderyds-kommun", "namn": "Danderyds kommun"},
+        {"id": "sollentuna-kommun", "namn": "Sollentuna kommun"},
+        {"id": "stockholms-kommun", "namn": "Stockholms kommun"},
+        {"id": "sodertalje-kommun", "namn": "Södertälje kommun"},
+        {"id": "nacka-kommun", "namn": "Nacka kommun"},
+        {"id": "sundbybergs-kommun", "namn": "Sundbybergs kommun"},
+        {"id": "solna-kommun", "namn": "Solna kommun"},
+        {"id": "lidingo-kommun", "namn": "Lidingö kommun"},
+        {"id": "vaxholms-kommun", "namn": "Vaxholms kommun"},
+        {"id": "norrtalje-kommun", "namn": "Norrtälje kommun"},
+        {"id": "sigtuna-kommun", "namn": "Sigtuna kommun"},
+        {"id": "nynashamns-kommun", "namn": "Nynäshamns kommun"}
+      ]
+    },
+    {
+      "id": "uppsala-lan",
+      "namn": "Uppsala län",
+      "kommuner": [
+        {"id": "habo-kommun", "namn": "Håbo kommun"},
+        {"id": "alvkarleby-kommun", "namn": "Älvkarleby kommun"},
+        {"id": "knivsta-kommun", "namn": "Knivsta kommun"},
+        {"id": "heby-kommun", "namn": "Heby kommun"},
+        {"id": "tierps-kommun", "namn": "Tierps kommun"},
+        {"id": "uppsala-kommun", "namn": "Uppsala kommun"},
+        {"id": "enkopings-kommun", "namn": "Enköpings kommun"},
+        {"id": "osthammars-kommun", "namn": "Östhammars kommun"}
+      ]
+    },
+    {
+      "id": "sodermanlands-lan",
+      "namn": "Södermanlands län",
+      "kommuner": [
+        {"id": "vingakers-kommun", "namn": "Vingåkers kommun"},
+        {"id": "gnesta-kommun", "namn": "Gnesta kommun"},
+        {"id": "nykopings-kommun", "namn": "Nyköpings kommun"},
+        {"id": "oxelosunds-kommun", "namn": "Oxelösunds kommun"},
+        {"id": "flens-kommun", "namn": "Flens kommun"},
+        {"id": "katrineholms-kommun", "namn": "Katrineholms kommun"},
+        {"id": "eskilstuna-kommun", "namn": "Eskilstuna kommun"},
+        {"id": "strangnas-kommun", "namn": "Strängnäs kommun"},
+        {"id": "trosa-kommun", "namn": "Trosa kommun"}
+      ]
+    },
+    {
+      "id": "ostergotlands-lan",
+      "namn": "Östergötlands län",
+      "kommuner": [
+        {"id": "odeshogs-kommun", "namn": "Ödeshögs kommun"},
+        {"id": "ydre-kommun", "namn": "Ydre kommun"},
+        {"id": "kinda-kommun", "namn": "Kinda kommun"},
+        {"id": "boxholms-kommun", "namn": "Boxholms kommun"},
+        {"id": "atvidabergs-kommun", "namn": "Åtvidabergs kommun"},
+        {"id": "finspangs-kommun", "namn": "Finspångs kommun"},
+        {"id": "valdemarsviks-kommun", "namn": "Valdemarsviks kommun"},
+        {"id": "linkopings-kommun", "namn": "Linköpings kommun"},
+        {"id": "norrkopings-kommun", "namn": "Norrköpings kommun"},
+        {"id": "soderkopings-kommun", "namn": "Söderköpings kommun"},
+        {"id": "motala-kommun", "namn": "Motala kommun"},
+        {"id": "vadstena-kommun", "namn": "Vadstena kommun"},
+        {"id": "mjolby-kommun", "namn": "Mjölby kommun"}
+      ]
+    },
+    {
+      "id": "jonkopings-lan",
+      "namn": "Jönköpings län",
+      "kommuner": [
+        {"id": "aneby-kommun", "namn": "Aneby kommun"},
+        {"id": "gnosjo-kommun", "namn": "Gnosjö kommun"},
+        {"id": "mullsjo-kommun", "namn": "Mullsjö kommun"},
+        {"id": "habo-kommun", "namn": "Habo kommun"},
+        {"id": "gislaveds-kommun", "namn": "Gislaveds kommun"},
+        {"id": "vaggeryds-kommun", "namn": "Vaggeryds kommun"},
+        {"id": "jonkopings-kommun", "namn": "Jönköpings kommun"},
+        {"id": "nassjo-kommun", "namn": "Nässjö kommun"},
+        {"id": "varnamo-kommun", "namn": "Värnamo kommun"},
+        {"id": "savsjo-kommun", "namn": "Sävsjö kommun"},
+        {"id": "vetlanda-kommun", "namn": "Vetlanda kommun"},
+        {"id": "eksjo-kommun", "namn": "Eksjö kommun"},
+        {"id": "tranas-kommun", "namn": "Tranås kommun"}
+      ]
+    },
+    {
+      "id": "kronobergs-lan",
+      "namn": "Kronobergs län",
+      "kommuner": [
+        {"id": "uppvidinge-kommun", "namn": "Uppvidinge kommun"},
+        {"id": "lessebo-kommun", "namn": "Lessebo kommun"},
+        {"id": "tingsryds-kommun", "namn": "Tingsryds kommun"},
+        {"id": "alvesta-kommun", "namn": "Alvesta kommun"},
+        {"id": "almhults-kommun", "namn": "Älmhults kommun"},
+        {"id": "markaryds-kommun", "namn": "Markaryds kommun"},
+        {"id": "vaxjo-kommun", "namn": "Växjö kommun"},
+        {"id": "ljungby-kommun", "namn": "Ljungby kommun"}
+      ]
+    },
+    {
+      "id": "kalmar-lan",
+      "namn": "Kalmar län",
+      "kommuner": [
+        {"id": "hogsby-kommun", "namn": "Högsby kommun"},
+        {"id": "torsas-kommun", "namn": "Torsås kommun"},
+        {"id": "morbylanga-kommun", "namn": "Mörbylånga kommun"},
+        {"id": "hultsfreds-kommun", "namn": "Hultsfreds kommun"},
+        {"id": "monsteras-kommun", "namn": "Mönsterås kommun"},
+        {"id": "emmaboda-kommun", "namn": "Emmaboda kommun"},
+        {"id": "kalmar-kommun", "namn": "Kalmar kommun"},
+        {"id": "nybro-kommun", "namn": "Nybro kommun"},
+        {"id": "oskarshamns-kommun", "namn": "Oskarshamns kommun"},
+        {"id": "vasterviks-kommun", "namn": "Västerviks kommun"},
+        {"id": "vimmerby-kommun", "namn": "Vimmerby kommun"},
+        {"id": "borgholms-kommun", "namn": "Borgholms kommun"}
+      ]
+    },
+    {
+      "id": "gotlands-lan",
+      "namn": "Gotlands län",
+      "kommuner": [
+        {"id": "gotlands-kommun", "namn": "Gotlands kommun"}
+      ]
+    },
+    {
+      "id": "blekinge-lan",
+      "namn": "Blekinge län",
+      "kommuner": [
+        {"id": "olofstroms-kommun", "namn": "Olofströms kommun"},
+        {"id": "karlskrona-kommun", "namn": "Karlskrona kommun"},
+        {"id": "ronneby-kommun", "namn": "Ronneby kommun"},
+        {"id": "karlshamns-kommun", "namn": "Karlshamns kommun"},
+        {"id": "solvesborgs-kommun", "namn": "Sölvesborgs kommun"}
+      ]
+    },
+    {
+      "id": "skane-lan",
+      "namn": "Skåne län",
+      "kommuner": [
+        {"id": "svalovs-kommun", "namn": "Svalövs kommun"},
+        {"id": "staffanstorps-kommun", "namn": "Staffanstorps kommun"},
+        {"id": "burlovs-kommun", "namn": "Burlövs kommun"},
+        {"id": "vellinge-kommun", "namn": "Vellinge kommun"},
+        {"id": "ostra-goinge-kommun", "namn": "Östra Göinge kommun"},
+        {"id": "orkelljunga-kommun", "namn": "Örkelljunga kommun"},
+        {"id": "bjuvs-kommun", "namn": "Bjuvs kommun"},
+        {"id": "kavlinge-kommun", "namn": "Kävlinge kommun"},
+        {"id": "lomma-kommun", "namn": "Lomma kommun"},
+        {"id": "svedala-kommun", "namn": "Svedala kommun"},
+        {"id": "skurups-kommun", "namn": "Skurups kommun"},
+        {"id": "sjobo-kommun", "namn": "Sjöbo kommun"},
+        {"id": "horby-kommun", "namn": "Hörby kommun"},
+        {"id": "hoors-kommun", "namn": "Höör kommun"},
+        {"id": "tomelilla-kommun", "namn": "Tomelilla kommun"},
+        {"id": "bromolla-kommun", "namn": "Bromölla kommun"},
+        {"id": "osby-kommun", "namn": "Osby kommun"},
+        {"id": "perstorps-kommun", "namn": "Perstorps kommun"},
+        {"id": "klippans-kommun", "namn": "Klippans kommun"},
+        {"id": "astorps-kommun", "namn": "Åstorps kommun"},
+        {"id": "bastads-kommun", "namn": "Båstads kommun"},
+        {"id": "malmo-kommun", "namn": "Malmö kommun"},
+        {"id": "lunds-kommun", "namn": "Lunds kommun"},
+        {"id": "landskrona-kommun", "namn": "Landskrona kommun"},
+        {"id": "helsingborgs-kommun", "namn": "Helsingborgs kommun"},
+        {"id": "hoganas-kommun", "namn": "Höganäs kommun"},
+        {"id": "eslovs-kommun", "namn": "Eslövs kommun"},
+        {"id": "ystads-kommun", "namn": "Ystads kommun"},
+        {"id": "trelleborgs-kommun", "namn": "Trelleborgs kommun"},
+        {"id": "kristianstads-kommun", "namn": "Kristianstads kommun"},
+        {"id": "simrishamns-kommun", "namn": "Simrishamns kommun"},
+        {"id": "angelholms-kommun", "namn": "Ängelholms kommun"},
+        {"id": "hassleholms-kommun", "namn": "Hässleholms kommun"}
+      ]
+    },
+    {
+      "id": "hallands-lan",
+      "namn": "Hallands län",
+      "kommuner": [
+        {"id": "hylte-kommun", "namn": "Hylte kommun"},
+        {"id": "halmstads-kommun", "namn": "Halmstads kommun"},
+        {"id": "laholms-kommun", "namn": "Laholms kommun"},
+        {"id": "falkenbergs-kommun", "namn": "Falkenbergs kommun"},
+        {"id": "varbergs-kommun", "namn": "Varbergs kommun"},
+        {"id": "kungsbacka-kommun", "namn": "Kungsbacka kommun"}
+      ]
+    },
+    {
+      "id": "vastra-gotalands-lan",
+      "namn": "Västra Götalands län",
+      "kommuner": [
+        {"id": "harryda-kommun", "namn": "Härryda kommun"},
+        {"id": "partille-kommun", "namn": "Partille kommun"},
+        {"id": "ockero-kommun", "namn": "Öckerö kommun"},
+        {"id": "stenungsunds-kommun", "namn": "Stenungsunds kommun"},
+        {"id": "tjorns-kommun", "namn": "Tjörns kommun"},
+        {"id": "orust-kommun", "namn": "Orust kommun"},
+        {"id": "sotenas-kommun", "namn": "Sotenäs kommun"},
+        {"id": "munkedals-kommun", "namn": "Munkedals kommun"},
+        {"id": "tanums-kommun", "namn": "Tanums kommun"},
+        {"id": "dals-eds-kommun", "namn": "Dals-Eds kommun"},
+        {"id": "fargelanda-kommun", "namn": "Färgelanda kommun"},
+        {"id": "ale-kommun", "namn": "Ale kommun"},
+        {"id": "lerums-kommun", "namn": "Lerums kommun"},
+        {"id": "vargarda-kommun", "namn": "Vårgårda kommun"},
+        {"id": "bollebygds-kommun", "namn": "Bollebygds kommun"},
+        {"id": "grastorps-kommun", "namn": "Grästorps kommun"},
+        {"id": "essunga-kommun", "namn": "Essunga kommun"},
+        {"id": "karlsborgs-kommun", "namn": "Karlsborgs kommun"},
+        {"id": "gullspangs-kommun", "namn": "Gullspångs kommun"},
+        {"id": "tranemo-kommun", "namn": "Tranemo kommun"},
+        {"id": "bengtsfors-kommun", "namn": "Bengtsfors kommun"},
+        {"id": "melleruds-kommun", "namn": "Melleruds kommun"},
+        {"id": "lilla-edets-kommun", "namn": "Lilla Edets kommun"},
+        {"id": "marks-kommun", "namn": "Marks kommun"},
+        {"id": "svenljunga-kommun", "namn": "Svenljunga kommun"},
+        {"id": "herrljunga-kommun", "namn": "Herrljunga kommun"},
+        {"id": "vara-kommun", "namn": "Vara kommun"},
+        {"id": "gotene-kommun", "namn": "Götene kommun"},
+        {"id": "tibro-kommun", "namn": "Tibro kommun"},
+        {"id": "toreboda-kommun", "namn": "Töreboda kommun"},
+        {"id": "goteborgs-stad", "namn": "Göteborgs Stad"},
+        {"id": "molndals-kommun", "namn": "Mölndals kommun"},
+        {"id": "kungalvs-kommun", "namn": "Kungälvs kommun"},
+        {"id": "lysekils-kommun", "namn": "Lysekils kommun"},
+        {"id": "uddevalla-kommun", "namn": "Uddevalla kommun"},
+        {"id": "stromstads-kommun", "namn": "Strömstads kommun"},
+        {"id": "vanersborgs-kommun", "namn": "Vänersborgs kommun"},
+        {"id": "trollhattans-kommun", "namn": "Trollhättans kommun"},
+        {"id": "alingsas-kommun", "namn": "Alingsås kommun"},
+        {"id": "boras-kommun", "namn": "Borås kommun"},
+        {"id": "ulricehamns-kommun", "namn": "Ulricehamns kommun"},
+        {"id": "amals-kommun", "namn": "Åmåls kommun"},
+        {"id": "mariestads-kommun", "namn": "Mariestads kommun"},
+        {"id": "lidkopings-kommun", "namn": "Lidköpings kommun"},
+        {"id": "skara-kommun", "namn": "Skara kommun"},
+        {"id": "skovde-kommun", "namn": "Skövde kommun"},
+        {"id": "hjo-kommun", "namn": "Hjo kommun"},
+        {"id": "tidaholms-kommun", "namn": "Tidaholms kommun"},
+        {"id": "falkopings-kommun", "namn": "Falköpings kommun"}
+      ]
+    },
+    {
+      "id": "varmlands-lan",
+      "namn": "Värmlands län",
+      "kommuner": [
+        {"id": "kils-kommun", "namn": "Kils kommun"},
+        {"id": "eda-kommun", "namn": "Eda kommun"},
+        {"id": "torsby-kommun", "namn": "Torsby kommun"},
+        {"id": "storfors-kommun", "namn": "Storfors kommun"},
+        {"id": "hammaro-kommun", "namn": "Hammarö kommun"},
+        {"id": "munkfors-kommun", "namn": "Munkfors kommun"},
+        {"id": "forshaga-kommun", "namn": "Forshaga kommun"},
+        {"id": "grums-kommun", "namn": "Grums kommun"},
+        {"id": "arjangs-kommun", "namn": "Årjängs kommun"},
+        {"id": "sunne-kommun", "namn": "Sunne kommun"},
+        {"id": "karlstads-kommun", "namn": "Karlstads kommun"},
+        {"id": "kristinehamns-kommun", "namn": "Kristinehamns kommun"},
+        {"id": "filipstads-kommun", "namn": "Filipstads kommun"},
+        {"id": "hagfors-kommun", "namn": "Hagfors kommun"},
+        {"id": "arvika-kommun", "namn": "Arvika kommun"},
+        {"id": "saffle-kommun", "namn": "Säffle kommun"}
+      ]
+    },
+    {
+      "id": "orebro-lan",
+      "namn": "Örebro län",
+      "kommuner": [
+        {"id": "lekebergs-kommun", "namn": "Lekebergs kommun"},
+        {"id": "laxa-kommun", "namn": "Laxå kommun"},
+        {"id": "hallsbergs-kommun", "namn": "Hallsbergs kommun"},
+        {"id": "degerfors-kommun", "namn": "Degerfors kommun"},
+        {"id": "hallefors-kommun", "namn": "Hällefors kommun"},
+        {"id": "ljusnarsbergs-kommun", "namn": "Ljusnarsbergs kommun"},
+        {"id": "orebro-kommun", "namn": "Örebro kommun"},
+        {"id": "kumla-kommun", "namn": "Kumla kommun"},
+        {"id": "askersunds-kommun", "namn": "Askersunds kommun"},
+        {"id": "karlskoga-kommun", "namn": "Karlskoga kommun"},
+        {"id": "nora-kommun", "namn": "Nora kommun"},
+        {"id": "lindesbergs-kommun", "namn": "Lindesbergs kommun"}
+      ]
+    },
+    {
+      "id": "vastmanlands-lan",
+      "namn": "Västmanlands län",
+      "kommuner": [
+        {"id": "skinnskattebergs-kommun", "namn": "Skinnskattebergs kommun"},
+        {"id": "surahammars-kommun", "namn": "Surahammars kommun"},
+        {"id": "kungsors-kommun", "namn": "Kungsörs kommun"},
+        {"id": "hallstahammars-kommun", "namn": "Hallstahammars kommun"},
+        {"id": "norbergs-kommun", "namn": "Norbergs kommun"},
+        {"id": "vasteras-kommun", "namn": "Västerås kommun"},
+        {"id": "sala-kommun", "namn": "Sala kommun"},
+        {"id": "fagersta-kommun", "namn": "Fagersta kommun"},
+        {"id": "kopings-kommun", "namn": "Köpings kommun"},
+        {"id": "arboga-kommun", "namn": "Arboga kommun"}
+      ]
+    },
+    {
+      "id": "dalarnas-lan",
+      "namn": "Dalarnas län",
+      "kommuner": [
+        {"id": "vansbro-kommun", "namn": "Vansbro kommun"},
+        {"id": "malung-salens-kommun", "namn": "Malung-Sälens kommun"},
+        {"id": "gagnefs-kommun", "namn": "Gagnefs kommun"},
+        {"id": "leksands-kommun", "namn": "Leksands kommun"},
+        {"id": "rattviks-kommun", "namn": "Rättviks kommun"},
+        {"id": "orsa-kommun", "namn": "Orsa kommun"},
+        {"id": "alvdalens-kommun", "namn": "Älvdalens kommun"},
+        {"id": "smedjebackens-kommun", "namn": "Smedjebackens kommun"},
+        {"id": "mora-kommun", "namn": "Mora kommun"},
+        {"id": "falu-kommun", "namn": "Falu kommun"},
+        {"id": "borlange-kommun", "namn": "Borlänge kommun"},
+        {"id": "saters-kommun", "namn": "Säters kommun"},
+        {"id": "hedemora-kommun", "namn": "Hedemora kommun"},
+        {"id": "avesta-kommun", "namn": "Avesta kommun"},
+        {"id": "ludvika-kommun", "namn": "Ludvika kommun"}
+      ]
+    },
+    {
+      "id": "gavleborgs-lan",
+      "namn": "Gävleborgs län",
+      "kommuner": [
+        {"id": "ockelbo-kommun", "namn": "Ockelbo kommun"},
+        {"id": "hofors-kommun", "namn": "Hofors kommun"},
+        {"id": "ovanakers-kommun", "namn": "Ovanåkers kommun"},
+        {"id": "nordanstigs-kommun", "namn": "Nordanstigs kommun"},
+        {"id": "ljusdals-kommun", "namn": "Ljusdals kommun"},
+        {"id": "gavle-kommun", "namn": "Gävle kommun"},
+        {"id": "sandvikens-kommun", "namn": "Sandvikens kommun"},
+        {"id": "soderhamns-kommun", "namn": "Söderhamns kommun"},
+        {"id": "bollnas-kommun", "namn": "Bollnäs kommun"},
+        {"id": "hudiksvalls-kommun", "namn": "Hudiksvalls kommun"}
+      ]
+    },
+    {
+      "id": "vasternorrlands-lan",
+      "namn": "Västernorrlands län",
+      "kommuner": [
+        {"id": "ange-kommun", "namn": "Ånge kommun"},
+        {"id": "timra-kommun", "namn": "Timrå kommun"},
+        {"id": "harnosands-kommun", "namn": "Härnösands kommun"},
+        {"id": "sundsvalls-kommun", "namn": "Sundsvalls kommun"},
+        {"id": "kramfors-kommun", "namn": "Kramfors kommun"},
+        {"id": "solleftea-kommun", "namn": "Sollefteå kommun"},
+        {"id": "ornskoldsviks-kommun", "namn": "Örnsköldsviks kommun"}
+      ]
+    },
+    {
+      "id": "jamtlands-lan",
+      "namn": "Jämtlands län",
+      "kommuner": [
+        {"id": "ragunda-kommun", "namn": "Ragunda kommun"},
+        {"id": "bracke-kommun", "namn": "Bräcke kommun"},
+        {"id": "krokoms-kommun", "namn": "Krokoms kommun"},
+        {"id": "stromsunds-kommun", "namn": "Strömsunds kommun"},
+        {"id": "are-kommun", "namn": "Åre kommun"},
+        {"id": "bergs-kommun", "namn": "Bergs kommun"},
+        {"id": "harjedalens-kommun", "namn": "Härjedalens kommun"},
+        {"id": "ostersunds-kommun", "namn": "Östersunds kommun"}
+      ]
+    },
+    {
+      "id": "vasterbottens-lan",
+      "namn": "Västerbottens län",
+      "kommuner": [
+        {"id": "nordmalings-kommun", "namn": "Nordmalings kommun"},
+        {"id": "bjurholms-kommun", "namn": "Bjurholms kommun"},
+        {"id": "vindelns-kommun", "namn": "Vindelns kommun"},
+        {"id": "robertsfors-kommun", "namn": "Robertsfors kommun"},
+        {"id": "norsjo-kommun", "namn": "Norsjö kommun"},
+        {"id": "mala-kommun", "namn": "Malå kommun"},
+        {"id": "storumans-kommun", "namn": "Storumans kommun"},
+        {"id": "sorsele-kommun", "namn": "Sorsele kommun"},
+        {"id": "dorotea-kommun", "namn": "Dorotea kommun"},
+        {"id": "vannas-kommun", "namn": "Vännäs kommun"},
+        {"id": "vilhelmina-kommun", "namn": "Vilhelmina kommun"},
+        {"id": "asele-kommun", "namn": "Åsele kommun"},
+        {"id": "umea-kommun", "namn": "Umeå kommun"},
+        {"id": "lycksele-kommun", "namn": "Lycksele kommun"},
+        {"id": "skelleftea-kommun", "namn": "Skellefteå kommun"}
+      ]
+    },
+    {
+      "id": "norrbottens-lan",
+      "namn": "Norrbottens län",
+      "kommuner": [
+        {"id": "arvidsjaurs-kommun", "namn": "Arvidsjaurs kommun"},
+        {"id": "arjeplogs-kommun", "namn": "Arjeplogs kommun"},
+        {"id": "jokkmokks-kommun", "namn": "Jokkmokks kommun"},
+        {"id": "overkalix-kommun", "namn": "Överkalix kommun"},
+        {"id": "kalix-kommun", "namn": "Kalix kommun"},
+        {"id": "overtornea-kommun", "namn": "Övertorneå kommun"},
+        {"id": "pajala-kommun", "namn": "Pajala kommun"},
+        {"id": "gallivare-kommun", "namn": "Gällivare kommun"},
+        {"id": "alvsbyns-kommun", "namn": "Älvsbyns kommun"},
+        {"id": "lulea-kommun", "namn": "Luleå kommun"},
+        {"id": "pitea-kommun", "namn": "Piteå kommun"},
+        {"id": "bodens-kommun", "namn": "Bodens kommun"},
+        {"id": "haparanda-kommun", "namn": "Haparanda kommun"},
+        {"id": "kiruna-kommun", "namn": "Kiruna kommun"}
+      ]
+    }
+  ]
+}

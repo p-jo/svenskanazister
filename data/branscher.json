@@ -1,0 +1,96 @@
+{
+  "branscher": [
+    {
+      "id": "adel",
+      "namn": "Adel & hov"
+    },
+    {
+      "id": "akademi",
+      "namn": "Akademi & forskning"
+    },
+    {
+      "id": "ekonomi",
+      "namn": "Ekonomi & finans"
+    },
+    {
+      "id": "handel",
+      "namn": "Handel & försäljning"
+    },
+    {
+      "id": "hantverk",
+      "namn": "Hantverk"
+    },
+    {
+      "id": "industri",
+      "namn": "Industri, bygg & grovarbete"
+    },
+    {
+      "id": "jordbruk",
+      "namn": "Jordbruk & skog"
+    },
+    {
+      "id": "juridik",
+      "namn": "Juridik & rättsväsende"
+    },
+    {
+      "id": "kontorsarbetare",
+      "namn": "Kontorsarbetare"
+    },
+    {
+      "id": "kultur",
+      "namn": "Kultur"
+    },
+    {
+      "id": "kyrka",
+      "namn": "Kyrka"
+    },
+    {
+      "id": "ledning",
+      "namn": "Chefer & ledning"
+    },
+    {
+      "id": "media",
+      "namn": "Media"
+    },
+    {
+      "id": "militar",
+      "namn": "Militär"
+    },
+    {
+      "id": "politik",
+      "namn": "Politik & offentlig förvaltning"
+    },
+    {
+      "id": "service",
+      "namn": "Service & gästgiveri"
+    },
+    {
+      "id": "sjukvard",
+      "namn": "Sjukvård"
+    },
+    {
+      "id": "tjansteman",
+      "namn": "Tjänstemän & teknik"
+    },
+    {
+      "id": "transport",
+      "namn": "Transport & kommunikationer"
+    },
+    {
+      "id": "uppdrag",
+      "namn": "Föreningsuppdrag"
+    },
+    {
+      "id": "utbildning",
+      "namn": "Utbildning"
+    },
+    {
+      "id": "ovrigt",
+      "namn": "Övrigt"
+    },
+    {
+      "id": "okand",
+      "namn": "Okänd"
+    }    
+  ]
+}

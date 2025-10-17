@@ -1,0 +1,140 @@
+{
+  "organisationer": [
+    {
+      "id": "dagsposten",
+      "namn": "Dagsposten",
+      "källa": "Patent- och Registreringsverkets arkiv (Riksarkivet), Trots Allt 2-7/1944",
+      "medlemstyp": "aktieägare",
+      "länk": "http://www.tobiashubinette.se/dp.pdf",
+      "beskrivning": "Dagsposten var en svensk nationalistisk och pronazistisk dagstidning utgiven av och officiellt pressorgan för Sveriges Nationella Förbund från 1 december 1941 i Stockholm. Tidningen hade fram till 1945 finansiellt stöd från den tyska staten. Tidningen upphörde med utgången av år 1950 och fortsattes av veckotidningen Fria Ord."
+    },
+    {
+      "id": "gymniska-forbundet",
+      "namn": "Gymniska Förbundet",
+      "källa": "Gymn 1-2/1929",
+      "medlemstyp": "stamgymner och medarbetare",
+      "länk": "http://www.tobiashubinette.se/gf.pdf",
+      "beskrivning": "Gymniska Förbundet var en organisation med mottot \"hälsa, karaktär, skönhet\" som grundades 1928 av pronazisten Carl-Ernfrid Carlberg och som ville verka för friskvård och gymnisk kultur mot osundhet, etisk lättja och urartning. Förbundets gymniska kroppsideal utsattes för en allt mer rasbiologisk tolkning, som över tid tog överhanden från de tidigare gymnastiska och kulturella tolkningarna."
+    },
+    {
+      "id": "hjalpkommitt-n-for-tysklands-barn",
+      "namn": "Hjälpkommittén för Tysklands Barn",
+      "källa": "Upprop för hjälp åt Tysklands folk (Hjälpkommittén för Tysklands barn, Stockholm, 1945)",
+      "medlemstyp": "stiftare",
+      "länk": "http://www.tobiashubinette.se/htb.pdf",
+      "beskrivning": "Hjälpkommittén för Tysklands barn var en svensk hjälporganisation som grundades 1944 och som utåt framträdde som en välgörenhetskommitté för nödlidande barn i det krigshärjade Tyskland, men som i praktiken utvecklades till en central del av den svenska överklassnazismens efterkrigsnätverk. Under de första åtta åren samlade kommittén in över 30 miljoner kronor (motsvarande hundratals miljoner i dagens penningvärde), vilka användes för att stödja naziflyktingar, före detta SS-medlemmar samt änkor och barn till avrättade toppnazister, ofta i samarbete med den tyska organisationen Stille Hilfe. Verksamheten hade sitt säte i det så kallade ”Bruna huset” på Odengatan 42, finansierat av nazistiske mecenaten C.-E. Carlberg, och backades av en rad profiler ur adel, kyrka och överklass, bland andra prinsessan Sibylla, grevinnan Lili Hamilton och sångerskan Birgit Nilsson som medverkade vid en stödkonsert 1953."
+    },
+    {
+      "id": "kyrkliga-folkpartiet",
+      "namn": "Kyrkliga Folkpartiet",
+      "källa": "Justitiedepartementets arkiv (Riksarkivet)",
+      "medlemstyp": "medlem",
+      "länk": "http://www.tobiashubinette.se/kfp.pdf",
+      "beskrivning": "Kyrkliga Folkpartiet (kfp) var under 1930-talet ett parti som sade sig förespråka ”verklig högerpolitik”, till skillnad från Högerpartiet, som ansågs vara alltför moderat. Partiet var kungavänligt, försvarsvänligt, mot ”osedligt leverne” och motståndare till parlamentarismen."
+    },
+    {
+      "id": "marsklubben",
+      "namn": "Marsklubben",
+      "källa": "Marsklubbens arkiv (volym 1, Stockholms stadsarkiv)",
+      "medlemstyp": "stiftare",
+      "länk": "http://www.tobiashubinette.se/mk.pdf",
+      "beskrivning": "Marsklubben var en konservativ och högerradikal politisk sammanslutning i Stockholm, verksam mellan 1931 och 1945. Föreningen uppstod ur \"Uppropet till konservativt sinnade medborgare i huvudstaden\" den 2 mars 1931, vilket markerade en brytning med Allmänna valmansförbundet och ledde till bildandet av Den fria högerns klubb. Under åren 1931–1934 användes detta namn innan organisationen antog beteckningen Marsklubben. Rörelsen upplöstes 1945."
+    },
+    {
+      "id": "nationalsocialistiska-arbetarepartiet",
+      "namn": "Nationalsocialistiska Arbetarepartiet",
+      "källa": "Den Svenske Nationalsocialisten (32/1933, 50/1934, 100/1935, 99/1936, 98/1937 100/1937), Stormfacklan (12/1935, 24/1936, 26/1937)",
+      "medlemstyp": "jul- och nyårshälsningar",
+      "länk": "http://www.tobiashubinette.se/nsap.pdf",
+      "beskrivning": "Svensk socialistisk samling (SSS), fram till 1938 benämnt Nationalsocialistiska arbetarepartiet (NSAP) och i dagligt tal kallat Lindholmarna, var ett svenskt nazistiskt politiskt parti som existerade från 1933 till utgången av juni 1950. Partiet, som tillkom genom en utbrytning från det av Birger Furugård ledda Svenska nationalsocialistiska partiet (SNSP), grundades i januari 1933 på initiativ av Sven Olov Lindholm, som förblev partiledare under hela dess existens."
+    },
+    {
+      "id": "nationalsocialistiska-blocket",
+      "namn": "Nationalsocialistiska Blocket",
+      "källa": "Landet Fritt (22/12 1933), Vår Kamp (50/1933), Riksposten (30/1934, 45-46/1935, 1/1937, 44-45/1937)",
+      "medlemstyp": "jul- och nyårshälsningar",
+      "länk": "http://www.tobiashubinette.se/nsb.pdf",
+      "beskrivning": "Nationalsocialistiska Blocket (NSB) var ett svenskt nazistiskt politiskt parti bildat i slutet av 1933 genom sammanslagning av Nationalsocialistiska samlingspartiet, Nationalsocialistiska förbundet, Svensk Front nazistiska lokalföreningar kring advokaten Sven Hallström i Umeå, samt, 1934, Svensk Nationalsocialistisk Samling. Eric von Rosen var en av personerna bakom organiserandet av Nationalsocialistiska Blocket."
+    },
+    {
+      "id": "riksforeningen-sverige-tyskland",
+      "namn": "Riksföreningen Sverige-Tyskland",
+      "källa": "Professor Hugo Odebergs arkiv (Lunds universitetsbibliotek), Riksföreningen Sverige-Tysklands arkiv (volym 1, Riksarkivet), Sverige-Tyskland (1/1938)",
+      "medlemstyp": "medlem",
+      "länk": "http://www.tobiashubinette.se/rst.pdf",
+      "beskrivning": "Riksföreningen Sverige–Tyskland var en svensk kulturförening med flertalet pronazistiska medlemmar, bildad i december 1937 i Lund. Riksföreningens uttalade syfte att \"på rent svenskt grundval, utan ställningstagande i partipolitiken, verka för ett rättvist bedömande av det nya Tyskland\" med tillägget att detta inte innebar \"drivande av nationalsocialistisk propaganda\" utan endast en strävan att förhindra \"en ohjälplig söndring mellan tvenne stambefryndade folk\". "
+    },
+    {
+      "id": "samfundet-manhem",
+      "namn": "Samfundet Manhem",
+      "källa": "Manhem. Opolitiskt samfund för svenskhetens bevarande i Sverige. Stiftelseurkund fastställd den 17 sept. 1934 (Svea Rikes Förlag, Stockholm, 1935)",
+      "medlemstyp": "stiftare",
+      "länk": "http://www.tobiashubinette.se/sm.pdf",
+      "beskrivning": "Samfundet Manhem var en pronazistisk förening i Sverige som i folkbildande syfte samlade \"nationellt sinnade\" personer från medel- och överklassen. Enligt samfundets emblem bildades samfundet 19 september 1934. Ständig sekreterare i samfundet var ingenjör Carl-Ernfrid Carlberg. Samfundets symbol var solkorset. Sannolikt stod samfundet Manhem bakom utgivningen av tidningarna Dagens Eko, Nationell Krönika och Sverige Fritt. Samfundet var indelat i en styrelse, ett vetenskapligt råd och ett konstnärligt råd. Medlemmarna kallade sig \"nygöter\" eller \"manhemare\"."
+    },
+    {
+      "id": "svenska-antisemitiska-foreningen",
+      "namn": "Svenska Antisemitiska Föreningen",
+      "källa": "Minareten 19-22/1929",
+      "medlemstyp": "medlem",
+      "länk": "http://www.tobiashubinette.se/saf.pdf",
+      "beskrivning": "Svenska Antisemitiska Föreningen (SASF) var en förening som bildades i Göteborg 22 november 1923 med Barthold Lundén som grundare, tillsammans med Sigurd Furugård som utsågs till sekreterare i styrelsen. Sigurd Furugård, som var äldre bror till Birger Furugård, hamnade dock i konflikt med Lundén och lämnade föreningen efter bara ett halvår. Föreningen hade som uppgift att sprida rasistiska idéer om judar i Sverige. Verksamheten leddes från Göteborg och använde redan på 1920-talet, som första gruppering i Sverige hakkorset som symbol. Föreningen var en förelöpare till de nazistiska partier som dök upp i Sverige på 1930-talet. Som propagandametoder användes smädesskrifter, föreläsningar och föredragsturnéer runtom i landet. Ämnena kunde till exempel vara Den judiska faran och Svenska Antisemitiska Föreningen. Föreningen anordnade också bojkotter av judiskägda företag och bland deras slagord fanns ”Sverige åt svenskarne”. Föreningens propagandatidskrift var tidningen Vidi, som föreningen delade lokal med och som bland annat publicerade listor med namnlistor över judar i Göteborg med omnejd som ägde eller drev företag. SASF hade fler än tusen medlemmar, bland annat blev Hermann Göring medlem under sin tid i Sverige på 1920-talet och en annan medlem var Birger Furugård. Föreningen och tidskriften lades ner 1931."
+    },
+    {
+      "id": "svenska-nationalsocialistiska-partiet",
+      "namn": "Svenska Nationalsocialistiska Partiet",
+      "källa": "Patent- och Registreringsverkets arkiv (Riksarkivet), Vår Kamp (24/1932), Nationalsocialistisk Tidning (16-17/1933, 33/1934, 51-52/1935), Solkorsfanan (10/1935)",
+      "medlemstyp": "jul- och nyårshälsningar och aktieägare",
+      "länk": "http://www.tobiashubinette.se/snsp.pdf",
+      "beskrivning": "Svenska nationalsocialistiska partiet (SNSP), fram till 1931 benämnt Nysvenska nationalsocialistiska förbundet (NNSF), var ett svenskt nazistiskt politiskt parti med Birger Furugård som partiledare, med \"riksledare\" som officiell titel. Till partiet var även ungdomsorganisationen Vikingarna samt kvinnoorganisationen Kristina Gyllenstierna knutna. Vid höjdpunkten 1933 hade partiet 10 000 medlemmar. Partiets symbol var hakkorset. Ideologiskt beskrev sig partiet som antisemitiskt, antikapitalistiskt och anti-marxistiskt."
+    },
+    {
+      "id": "svenska-socialistiska-partiet",
+      "namn": "Svenska socialistiska partiet",
+      "källa": "Tidens Röst (22/1941, 1/1942)",
+      "medlemstyp": "jul- och nyårshälsningar",
+      "länk": "http://www.tobiashubinette.se/ssp.pdf",
+      "beskrivning": "Svenska socialistiska partiet var ett svenskt nationalsocialistiskt parti som var verksamt under andra världskriget. Det hade sina rötter i Socialistiska partiet. Partiledare var Agaton Blom."
+    },
+    {
+      "id": "svensk-opposition",
+      "namn": "Svensk Opposition",
+      "källa": "Fil lic Per Engdahls arkiv (volym 48-50, Riksarkivet)",
+      "medlemstyp": "medlem",
+      "länk": "http://www.tobiashubinette.se/so.pdf",
+      "beskrivning": "Nysvenska rörelsen (NSR) var en fascistisk och korporativistisk nationalistisk politisk rörelse i Sverige grundad 1930 av Per Engdahl, som ledde rörelsen fram till sin död 1994. NSR betonade Sveriges särart och den storhet man anser att den svenska historien har. Som ett exempel på stöd för den äldre svenska kungamakten antog rörelsen en logotyp bestående av en vapensköld som bär en vase som sköldemärke."
+    },
+    {
+      "id": "svensk-socialistisk-samling",
+      "namn": "Svensk Socialistisk Samling",
+      "källa": "Patent- och Registreringsverkets arkiv (Riksarkivet), Den Svenske Nationalsocialisten (96/1938, 97/1938), Den Svenske Folksocialisten (95/1939, 51-52/1940, 1/1941, 2/1941, 51-52/1941, 1/1942, 51-52/1942, 1/1943, 51-52/1943, 1/1944, 51-52/1944, 1/1945, 50/1945), Stormfacklan (24/1938, 1/1939, 1/1944, 22-23/1944, 2122/1945), Ungt Folk (3-4/1939, 8/1940, 12/1941, 1/1942, 2/1942, 12/1942, 5/1943), Facklig Front (6/1943, 6/1944)",
+      "medlemstyp": "jul- och nyårshälsningar och aktieägare",
+      "länk": "http://www.tobiashubinette.se/sss.pdf",
+      "beskrivning": "Svensk socialistisk samling (SSS), fram till 1938 benämnt Nationalsocialistiska arbetarepartiet (NSAP) och i dagligt tal kallat Lindholmarna, var ett svenskt nazistiskt politiskt parti som existerade från 1933 till utgången av juni 1950. Partiet, som tillkom genom en utbrytning från det av Birger Furugård ledda Svenska nationalsocialistiska partiet (SNSP), grundades i januari 1933 på initiativ av Sven Olov Lindholm, som förblev partiledare under hela dess existens."
+    },
+    {
+      "id": "svensk-tyska-foreningen",
+      "namn": "Svensk-Tyska Föreningen",
+      "källa": "Trots Allts arkiv (volym F1:1, Arbetarrörelsens arkiv)",
+      "medlemstyp": "medlem",
+      "länk": "http://www.tobiashubinette.se/stf.pdf",
+      "beskrivning": "Svensk-Tyska Föreningen är en svensk förening som enligt stadgarna ska verka för kulturellt och ideellt utbyte mellan Sverige och Tyskland. Föreningen grundades 1913 på initiativ av försäkringsdirektören Sven Palme. Bland stiftarna återfinns bland andra Carl Larsson, Selma Lagerlöf och Verner von Heidenstam. För att nå föreningens syfte anordnar föreningen föredrag, utflykter samt besök på teatrar, utställningar, museer med mera. Föreningen officiella språk är svenska, men man vill även stimulera till ökad kännedom om tyska språket. Föreningen är politiskt och konfessionellt obunden och hade 2013 cirka 450 medlemmar."
+    },
+    {
+      "id": "sveriges-nationella-forbund",
+      "namn": "Sveriges Nationella Förbund",
+      "källa": "Nationell Tidning (51-52/1934, 51-52/1935, 1/1936, 51-52/1936, 1/1937, 50-51/1937, 1/1938, 52/1938, 1/1939, 51-52/1939, 1/1940, 51-52/1940, 1/1941, 51-52/1941, 1/1942, 51-52/1942, 1/1943, 47/1943, 1/1944), Ungdomsfronten (6/1939, 5/1940)",
+      "medlemstyp": "jul- och nyårshälsningar",
+      "länk": "http://www.tobiashubinette.se/snf.pdf",
+      "beskrivning": "Sveriges Nationella Förbund (SNF) var en högerradikal politisk organisation i Sverige som grundades 1915. Organisationen, som ursprungligen bildats som ett ungdomsförbund till Högerpartiet, kom med tiden att utvecklas i en allt mer pronazistisk riktning och periodvis samarbetade man med nationalsocialistiska grupper. SNF gav även ut den protyska dagstidningen Dagsposten som efter 1950 fortsattes av en politisk veckotidning med namnet Fria Ord."
+    },
+    {
+      "id": "tidningen-nationen",
+      "namn": "Tidningen Nationen",
+      "källa": "Redaktör Elof Erikssons arkiv (volym 6, Riksarkivet)",
+      "medlemstyp": "prenumerant",
+      "länk": "http://www.tobiashubinette.se/tn.pdf",
+      "beskrivning": "Tidningen Nationen startade den 2 oktober 1925 och var den första fascistiska tidningen i Sverige och såldes i omkring 3 000 exemplar per nummer. Nationen publicerades fram till 1941 och agiterade för antisemitism, för den italienska fascismen och nationalsocialism samt mot frimureri."
+    }
+  ]
+}
