@@ -401,6 +401,10 @@ summary + div {
 /* Responsivt */
 @media (max-width: 900px) {
 
+  .pill {
+    font-size: 12px;
+  }
+  
   #filters {
     position: sticky;
     top: 0;

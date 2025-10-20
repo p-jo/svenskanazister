@@ -73,20 +73,24 @@ window.MapManager = {
         const branschText = window.Utils.formatBranschNamn(rawBransch);
         const occupation = [branschText, yrkeText].filter(Boolean).join(': ');
 
-        // Plats (visa första som meta)
-        const locationParts = [];
+        // Plats 
+        let location = '';
         if (Array.isArray(person.platser) && person.platser.length) {
-          const plats = person.platser[0];
-          if (plats.adress) locationParts.push(plats.adress);
-          if (plats.ort) locationParts.push(plats.ort);
-          const kommunNamn = citiesById[plats.kommun]?.namn; // ← FIX: använd citiesById här
-          if (kommunNamn) locationParts.push(kommunNamn);
+          const rows = person.platser.map(plats => {
+            const bits = [];
+            if (plats.adress) bits.push(esc(plats.adress));
+            if (plats.ort) bits.push(esc(plats.ort));
+            const kommunNamn = citiesById[plats.kommun]?.namn; // använder citiesById här
+            if (kommunNamn) bits.push(esc(kommunNamn));
+            return bits.join(', ');
+          });
+          location = `${rows.join('<br>')}`;
         }
-        const location = locationParts.join(', ');
+
 
         let popupContent = ` <div class="name">${esc(person.fullnamn)}${person.alias ? ` <span class="meta meta-alias">(${esc(person.alias)})</span>` : ''}</div>`;
         if (occupation) popupContent += `<div class="meta meta-occupation">${esc(occupation)}</div>`;
-        if (location) popupContent += `<div class="meta meta-location">${esc(location)}</div>`;
+        if (location) popupContent += `<div class="meta meta-location">${location}</div>`;
         if (rels) popupContent += `<div class="meta">${rels}</div>`;
 
         marker.bindPopup(popupContent);
