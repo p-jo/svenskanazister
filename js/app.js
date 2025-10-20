@@ -114,7 +114,7 @@
       );
     };
 
-    const filterAndRender = () => {
+    const filterAndRender = (fromPagination = false) => {
       // Visa loader
       window.Utils.showElementLoader('list', 'Laddar namn…');
       window.Utils.showElementLoader('map', 'Laddar karta…');
@@ -145,6 +145,24 @@
         // Dölj loader
         window.Utils.hideElementLoader('list');
         window.Utils.hideElementLoader('map');
+
+        // Gå till början av listan
+        requestAnimationFrame(() => {
+          const items = document.getElementById('items');
+          if (!items) return;
+
+          // Desktop – scrolla internt i #items
+          if (!window.matchMedia('(max-width: 900px)').matches) {
+            items.scrollTop = 0;
+            return;
+          }
+
+          // Mobil – hoppa till listan *endast* om det var från pagination
+          if (fromPagination) {
+            window.scrollTo({ top: items.getBoundingClientRect().top + window.scrollY - 160, behavior: 'auto' });
+           // items.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
       }, 10);
     };
 

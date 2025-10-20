@@ -10,7 +10,7 @@ window.ListRenderer = {
       prevBtn.addEventListener('click', () => {
         if (state.page > 1) { 
           state.page--; 
-          filterAndRender(); 
+          filterAndRender(true); 
         }
       });
     }
@@ -18,10 +18,11 @@ window.ListRenderer = {
     if (nextBtn) {
       nextBtn.addEventListener('click', () => { 
         state.page++; 
-        filterAndRender(); 
+        filterAndRender(true);
       });
     }
   },
+
 
   renderList(items, state, relationsByPerson, orgsById, branschById, kommunerById, markerByPerson, map, refreshMarkers, openPersonSources) {
     const { $, esc } = window.Utils;
