@@ -6,7 +6,7 @@ window.AppConfig = {
   // Map settings
   MAP_CENTER: [62.0, 15.0],
   MAP_ZOOM: 5,
-  CLUSTER_ZOOM: 12,
+  CLUSTER_ZOOM: 22,
   
   // Heatmap settings
   HEAT_RADIUS: 16,
