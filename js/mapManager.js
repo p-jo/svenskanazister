@@ -4,12 +4,24 @@ window.MapManager = {
     const { MAP_CENTER, MAP_ZOOM, CLUSTER_ZOOM, HEAT_RADIUS, HEAT_BLUR, HEAT_MAX_ZOOM, HEAT_MIN_OPACITY } = window.AppConfig;
     
     // Create map
-    const map = L.map('map', { zoomControl: true }).setView(MAP_CENTER, MAP_ZOOM);
+//    const map = L.map('map', { zoomControl: true }).setView(MAP_CENTER, MAP_ZOOM);
+    const map = L.map('map', {
+      zoomControl: true,
+      gestureHandling: true, // Aktiverar två-fingers krav
+      gestureHandlingOptions: {
+        text: {
+          touch: "Använd två fingrar för att flytta kartan",
+          scroll: "Håll ctrl + scrolla för att zooma",
+          scrollMac: "Håll ⌘ + scrolla för att zooma"
+        }
+      }
+    }).setView(MAP_CENTER, MAP_ZOOM);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
       maxZoom: 19, 
       attribution: '&copy; OpenStreetMap-bidragsgivare' 
     }).addTo(map);
     
+
     // Create marker cluster
     const cluster = L.markerClusterGroup({ disableClusteringAtZoom: CLUSTER_ZOOM });
     map.addLayer(cluster);

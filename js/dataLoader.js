@@ -116,9 +116,9 @@ window.DataLoader = {
         
         return `
           <h3>${esc(org.namn)}</h3>
-          <div>${esc(org.källa)}</div>
-          <div style="margin-bottom:8px;">${linkHtml}</div>
-          <div style="margin-bottom:20px;">${esc(org.beskrivning || '')}</div>
+          <div class="meta">${esc(org.källa)}</div>
+          <div class="meta" style="margin-bottom:8px;">${linkHtml}</div>
+          <div class="meta" style="margin-bottom:20px;">${esc(org.beskrivning || '')}</div>
         `;
       }).join('');
       

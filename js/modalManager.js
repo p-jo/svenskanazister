@@ -67,9 +67,9 @@ window.ModalManager = {
         <div style="margin-bottom: 20px;">
           <p><strong>"${esc(originalLines)}"</strong></p>
           <h3 style="margin-bottom:6px">${esc(org.namn)}</h3>
-          <div>${esc(org.källa)}</div>
-          <div style="margin-bottom:4px;">${linkHtml}</div>
-          <div style="margin-bottom:16px; font-size:15px;">${esc(org.beskrivning || '')}</div>
+          <div class="meta">${esc(org.källa)}</div>
+          <div class="meta" style="margin-bottom:4px;">${linkHtml}</div>
+          <div class="meta" style="margin-bottom:16px;">${esc(org.beskrivning || '')}</div>
         </div>
       `;
     }).join('');

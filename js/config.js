@@ -1,6 +1,6 @@
 // config.js
 window.AppConfig = {
-  PAGE_SIZE: 50,
+  PAGE_SIZE: 20,
   DATA_BASE: './data', 
   
   // Map settings

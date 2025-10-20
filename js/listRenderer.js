@@ -76,15 +76,15 @@ window.ListRenderer = {
       
       // Build HTML
       row.innerHTML = `
+        <div class="actions">
+          <a href="#top" class="pill" data-person="${esc(p.id)}" data-action="map" aria-label="Visa ${esc(p.fullnamn)} på karta">Visa på karta</a>
+          <a href="#" class="pill" data-person="${esc(p.id)}" data-action="source" aria-label="Källor för ${esc(p.fullnamn)}">Källa</a>
+        </div>
         <div>
           <div class="name">${esc(p.fullnamn)}${p.alias ? ` <span class="meta meta-alias">(${esc(p.alias)})</span>` : ''}</div>
           <div class="meta meta-occupation">${esc(occupation)}</div>
           <div class="meta meta-location">${location}</div>
-          <div class="meta">${rels}</div>
-        </div>
-        <div class="actions">
-          <a href="#" class="pill" data-person="${esc(p.id)}" data-action="map" aria-label="Visa ${esc(p.fullnamn)} på karta">Visa på karta</a>
-          <a href="#" class="pill" data-person="${esc(p.id)}" data-action="source" aria-label="Källor för ${esc(p.fullnamn)}">Källa</a>
+          <div class="meta meta-org-data">${rels}</div>
         </div>`;
       
       // Add event listeners
@@ -93,7 +93,7 @@ window.ListRenderer = {
       
       if (mapBtn) {
         mapBtn.addEventListener('click', (e) => {
-          e.preventDefault();
+          //e.preventDefault();
 
           // Visa alla markörer för personen och zooma in
           refreshMarkers([p.id]);

@@ -40,21 +40,41 @@ body {
 }
 
 header {
-  position: sticky;
+/*  position: sticky;
   top: 0;
   z-index: 10;
+  */
+  background: rgba(11, 12, 15, .92);
+  backdrop-filter: blur(6px);
+ /* border-bottom: 1px solid var(--border); */
+  background: var(--panel);
+}
+header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#filters {  
   background: rgba(11, 12, 15, .92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
   background: var(--panel);
 }
 
-.wrap {
+.wrap,
+.filters {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 12px 16px;
+  padding: 10px 16px 12px;
 }
 
+.wrap {
+  padding-bottom: 1px;
+}
+
+.filters {
+  padding-top: 10px;
+}
 
 a:focus, a:hover {
   color: var(--fg);
@@ -68,7 +88,7 @@ a, a:visited {
 
 h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.5px
 }
@@ -76,7 +96,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h3 {
@@ -86,7 +106,7 @@ h3 {
 }
 
 p {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 }
 
 .filters {
@@ -100,7 +120,7 @@ p {
 .filters select,
 .filters button {
   width: 100%;
-  min-height: 44px;
+  min-height: 40px;
   padding: 10px 12px;
   background: var(--bg);
   color: var(--fg);
@@ -121,9 +141,9 @@ p {
   outline-offset: 2px;
 }
 
+
 .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 12px;
   padding: 12px 16px;
   max-width: 1200px;
@@ -135,8 +155,11 @@ p {
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+
+}
+
+#list, #map-container {
+  flex: 1;
 }
 
 #list header {
@@ -158,15 +181,12 @@ p {
 
 #items {
   overflow: auto;
-  max-height: calc(100vh - 260px);
+  max-height: calc(100vh - 312px);
 }
 
 .row {
   padding: 12px 16px;
   border-bottom: 1px solid var(--border);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 12px;
 }
 
 .row:last-child {
@@ -216,16 +236,15 @@ p {
 
 
 #map {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 200px);
   background: #0a0a0a;
   border-radius: 16px;
   z-index: 0;
 }
 
 .actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  float: right;
+  margin-left: 1rem;
 }
 
 .btn,
@@ -236,7 +255,7 @@ p {
   padding: 10px 12px;
   border-radius: 16px;
   cursor: pointer;
-  min-height: 44px;
+  min-height: 40px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -262,7 +281,7 @@ p {
   padding: 10px 12px;
   border-radius: 16px;
   cursor: pointer;
-  min-height: 44px;
+  min-height: 40px;
   font-family: inter;
 
 }
@@ -365,8 +384,40 @@ summary + div {
 
 /* Responsivt */
 @media (max-width: 900px) {
+
+  #filters {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  header {
+    position: inherit;
+  }
+
+  .meta-location {
+    font-size: 13px;
+  }
+
+  .meta-org-data,
+  .meta-location {
+    margin-top: 2px;
+  }
+
   .content {
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
   }
   
   .filters {
@@ -375,8 +426,14 @@ summary + div {
   }
   
   #map {
-    height: 60vh;
+    height: 62vh;
   }
+
+  #items {
+    max-height: unset;
+  }
+
+
 }
 
 /* Statistik */

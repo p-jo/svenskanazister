@@ -17,6 +17,10 @@
   <!-- Heatmap plugin -->
   <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
 
+  <!-- Gestures -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css" />
+  <script src="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.js"></script>
+
   <!-- Fuse.js via jsDelivr -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
@@ -24,12 +28,14 @@
   <link rel="stylesheet" href="./css/styles.css">
   <!-- <link rel="stylesheet" href="./css/searchable-dropdown.css">-->
 </head>
-<body>
+<body id="top">
   <header>
     <div class="wrap">
       <h1>Nazister i Sverige</h1>
       <h2>Medlemmar och sympatisörer 1931-45</h2>
       <p>Baserat på uppgifter framtagna av <a href="https://tobiashubinette.wordpress.com/texter/texter-om-nationalsocialism-och-fascism/">Tobias Hübinette</a></p>
+  </header>
+  <section id="filters">
       <div class="filters">
         <input id="q" type="search" placeholder="Sök person (namn/alias)…" aria-label="Sök person" />
         <select id="org" aria-label="Filtrera på organisation"><option value="">Alla organisationer</option></select>
@@ -38,7 +44,7 @@
         <button class="btn" id="reset">Rensa</button>
       </div>
     </div>
-  </header>
+  </section>
 
   <main class="content">
     <section id="list">
@@ -50,7 +56,7 @@
         <button id="next">Nästa</button>
       </div>
     </section>
-    <section>
+    <section id="map-container">
       <div id="map" role="region" aria-label="Karta över personer"></div>
     </section>
   </main>
