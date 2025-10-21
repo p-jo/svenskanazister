@@ -114,7 +114,7 @@
       );
     };
 
-    const filterAndRender = (fromPagination = false) => {
+    const filterAndRender = (isPagination = false) => {
       // Visa loader
       window.Utils.showElementLoader('list', 'Laddar namn…');
       window.Utils.showElementLoader('map', 'Laddar karta…');
@@ -139,7 +139,8 @@
           window.AppState.markerByPerson,
           window.AppState.map,
           refreshMarkers,
-          openPersonSources
+          openPersonSources,
+          isPagination
         );
         
         // Dölj loader
@@ -158,7 +159,7 @@
           }
 
           // Mobil – hoppa till listan *endast* om det var från pagination
-          if (fromPagination) {
+          if (isPagination) {
             window.scrollTo({ top: items.getBoundingClientRect().top + window.scrollY - 160, behavior: 'auto' });
            // items.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }

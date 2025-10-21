@@ -23,8 +23,7 @@ window.ListRenderer = {
     }
   },
 
-
-  renderList(items, state, relationsByPerson, orgsById, branschById, kommunerById, markerByPerson, map, refreshMarkers, openPersonSources) {
+  renderList(items, state, relationsByPerson, orgsById, branschById, kommunerById, markerByPerson, map, refreshMarkers, openPersonSources, skipMapUpdate = false) {
     const { $, esc } = window.Utils;
     const { PAGE_SIZE } = window.AppConfig;
     
@@ -118,15 +117,17 @@ window.ListRenderer = {
     this.updateStats(items.length);
     this.updatePagination(items.length, state.page);
     
-    // Update map
-    refreshMarkers(items.map(p => p.id));
+    // Update map - but only if not paginating
+    if (!skipMapUpdate) {
+      refreshMarkers(items.map(p => p.id));
+    }
   },
 
   updateStats(totalCount) {
     const { $ } = window.Utils;
     const statsEl = $('#stats');
     if (statsEl) {
-      statsEl.innerHTML = `${totalCount.toLocaleString('sv-SE')} personer matchar`;
+      statsEl.innerHTML = `${totalCount.toLocaleString('sv-SE')} personer`;
     }
   },
 
