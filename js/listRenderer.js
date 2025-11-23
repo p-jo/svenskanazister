@@ -74,10 +74,15 @@ window.ListRenderer = {
       }
 
       
-      // Build HTML
+      // Build HTML - conditional map link
+      const hasLocation = Array.isArray(p.coordinates) && p.coordinates.length > 0;
+      const mapLinkHTML = hasLocation 
+        ? `<a href="#top" class="pill" data-person="${esc(p.id)}" data-action="map" aria-label="Visa ${esc(p.fullnamn)} på karta">Visa på karta</a>`
+        : '';
+
       row.innerHTML = `
         <div class="actions">
-          <a href="#top" class="pill" data-person="${esc(p.id)}" data-action="map" aria-label="Visa ${esc(p.fullnamn)} på karta">Visa på karta</a>
+          ${mapLinkHTML}
           <a href="#" class="pill" data-person="${esc(p.id)}" data-action="source" aria-label="Källor för ${esc(p.fullnamn)}">Källa</a>
         </div>
         <div>
