@@ -1,142 +1,65 @@
 // Statistics management with Chart.js
 window.StatisticsManager = {
+  // Diagrammen byggs först när statistikpanelen öppnas
+  initializeStatistics(persons, lan, branschById) {
+    const details = document.getElementById('statistics')?.closest('details');
+    if (!details) return;
 
-  initializeStatistics(persons, lan, branschById, kommunToLan) {
-    if (typeof Chart === 'undefined') {
-      console.warn('Chart.js not loaded, skipping statistics');
-      return;
-    }
-
-    this.createLanChart(persons, lan, kommunToLan);
-    this.createBranschChart(persons, branschById);
+    details.addEventListener('toggle', () => {
+      if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not loaded, skipping statistics');
+        return;
+      }
+      this.createLanChart(persons, lan);
+      this.createBranschChart(persons, branschById);
+    }, { once: true });
   },
 
-  createLanChart(persons, lan, kommunToLan) {
-    const ctx = document.getElementById('kommunChart'); // Behåll samma ID för nu
-    if (!ctx) return;
+  createLanChart(persons, lan) {
+    // Varje person räknas en gång per län
+    const counts = new Map();
+    for (const person of persons) {
+      for (const lanId of person.lanIds) counts.set(lanId, (counts.get(lanId) || 0) + 1);
+    }
 
-    // Count persons per lan
-    const lanCounts = {};
-    
-    // Initialize all lan with 0
-    lan.forEach(l => {
-      lanCounts[l.namn] = 0;
-    });
+    const entries = lan
+      .filter(l => counts.has(l.id))
+      .map(l => [l.namn, counts.get(l.id)]);
 
-    persons.forEach(person => {
-      if (person.platser && person.platser.length > 0) {
-        const processedLan = new Set(); // Undvik dubbelräkning
-        person.platser.forEach(plats => {
-          if (plats.kommun) {
-            const lanId = kommunToLan.get(plats.kommun);
-            if (lanId && !processedLan.has(lanId)) {
-              const lanObj = lan.find(l => l.id === lanId);
-              if (lanObj) {
-                lanCounts[lanObj.namn]++;
-                processedLan.add(lanId);
-              }
-            }
-          }
-        });
-      }
-    });
-
-    // Sort by count
-    const sortedLan = Object.entries(lanCounts)
-      .filter(([,count]) => count > 0) // Visa bara lan med personer
-      .sort(([,a], [,b]) => b - a);
-
-    const labels = sortedLan.map(([name]) => name);
-    const data = sortedLan.map(([,count]) => count);
-
-    // Adjust canvas height
-    const chartHeight = Math.max(300, labels.length * 35);
-    ctx.parentElement.style.height = chartHeight + 'px';
-
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'Antal personer',
-          data: data,
-          backgroundColor: '#60cd64',
-          borderColor: '#e0e2e2',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            beginAtZero: true,
-            ticks: {
-              color: '#0b1215'
-            },
-            grid: {
-              color: '#e0e2e2'
-            }
-          },
-          y: {
-            ticks: {
-              color: '#0b1215',
-              font: {
-                size: 12
-              }
-            },
-            grid: {
-              color: '#e0e2e2'
-            }
-          }
-        }
-      }
-    });
+    this.createBarChart(document.getElementById('lanChart'), entries, 35, 12);
   },
 
   createBranschChart(persons, branschById) {
-    const ctx = document.getElementById('branschChart');
-    if (!ctx) return;
+    const counts = {};
+    for (const person of persons) {
+      if (!person.bransch) continue;
+      const name = window.Utils.formatBranschNamn(branschById[person.bransch]?.namn || person.bransch);
+      if (name) counts[name] = (counts[name] || 0) + 1;
+    }
 
-    // Count persons per bransch
-    const branschCounts = {};
-    persons.forEach(person => {
-      if (person.bransch) {
-        const branschName = branschById[person.bransch]?.namn || person.bransch;
-        // Skip "Okänd" and "Övrigt" as per utils formatting
-        const formattedName = window.Utils.formatBranschNamn(branschName);
-        if (formattedName) {
-          branschCounts[formattedName] = (branschCounts[formattedName] || 0) + 1;
-        }
-      }
-    });
+    this.createBarChart(document.getElementById('branschChart'), Object.entries(counts), 30, 11);
+  },
 
-    // Sort by count (show all)
-    const sortedBranscher = Object.entries(branschCounts)
-      .sort(([,a], [,b]) => b - a);
+  createBarChart(canvas, entries, rowHeight, fontSize) {
+    if (!canvas) return;
 
-    const labels = sortedBranscher.map(([name]) => name);
-    const data = sortedBranscher.map(([,count]) => count);
+    const sorted = [...entries].sort(([, a], [, b]) => b - a);
+    canvas.parentElement.style.height = Math.max(300, sorted.length * rowHeight) + 'px';
 
-    // Adjust canvas height based on number of items
-    const chartHeight = Math.max(300, labels.length * 30);
-    ctx.parentElement.style.height = chartHeight + 'px';
+    const css = getComputedStyle(document.documentElement);
+    const fg = css.getPropertyValue('--fg').trim();
+    const border = css.getPropertyValue('--border').trim();
+    const bar = css.getPropertyValue('--chart').trim();
 
-    new Chart(ctx, {
+    new Chart(canvas, {
       type: 'bar',
       data: {
-        labels: labels,
+        labels: sorted.map(([name]) => name),
         datasets: [{
           label: 'Antal personer',
-          data: data,
-          backgroundColor: '#60cd64',
-          borderColor: '#e0e2e2',
+          data: sorted.map(([, count]) => count),
+          backgroundColor: bar,
+          borderColor: border,
           borderWidth: 1
         }]
       },
@@ -144,32 +67,10 @@ window.StatisticsManager = {
         indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
-          }
-        },
+        plugins: { legend: { display: false } },
         scales: {
-          x: {
-            beginAtZero: true,
-            ticks: {
-              color: '#0b1215'
-            },
-            grid: {
-              color: '#e0e2e2'
-            }
-          },
-          y: {
-            ticks: {
-              color: '#0b1215',
-              font: {
-                size: 11
-              }
-            },
-            grid: {
-              color: '#e0e2e2'
-            }
-          }
+          x: { beginAtZero: true, ticks: { color: fg }, grid: { color: border } },
+          y: { ticks: { color: fg, font: { size: fontSize } }, grid: { color: border } }
         }
       }
     });
